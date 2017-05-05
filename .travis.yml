@@ -4,7 +4,7 @@ xcode_workspace: Photowall.xcworkspace
 xcode_scheme: Photowall
 
 script:
-  - xcodebuild -scheme Photowall -workspace Photowall.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.0' build test
+  - xcodebuild -scheme Photowall -workspace Photowall.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3' build test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
